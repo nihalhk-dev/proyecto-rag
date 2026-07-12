@@ -10,7 +10,7 @@ Columbia University e IARE. Cada respuesta indica **de qué documento y de qué 
 agente **recuerda** la conversación: puedes preguntarle _«¿y sus limitaciones?»_ y sabe de qué le
 hablas.
 
-**🔗 App desplegada → [https://TU-APP.streamlit.app](https://proyecto-rag-nihalhk.streamlit.app/)**
+**🔗 App desplegada → [Streamlit App](https://proyecto-rag-nihalhk.streamlit.app/)**
 **📓 Documentación completa → [`asistente_rag_gemini.ipynb`](asistente_rag_gemini.ipynb)**
 
 ---
