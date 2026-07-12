@@ -10,7 +10,7 @@ Columbia University e IARE. Cada respuesta indica **de qué documento y de qué 
 agente **recuerda** la conversación: puedes preguntarle _«¿y sus limitaciones?»_ y sabe de qué le
 hablas.
 
-**🔗 App desplegada → https://TU-APP.streamlit.app**
+**🔗 App desplegada → [https://TU-APP.streamlit.app](https://proyecto-rag-nihalhk.streamlit.app/)**
 **📓 Documentación completa → [`asistente_rag_gemini.ipynb`](asistente_rag_gemini.ipynb)**
 
 ---
@@ -65,7 +65,7 @@ Las siguientes **reutilizan ambas cosas**: no se vuelve a descargar ni a indexar
 ## Requisitos
 
 - **Python 3.10+** (probado con 3.12).
-- **API key de Google Gemini** (gratuita) → [Google AI Studio](https://aistudio.google.com/apikey).
+- **API key de Google Gemini**.
   Se carga desde `.env`; **nunca se escribe en el código** (`.env` está en `.gitignore`).
 - Conexión a internet **solo la primera vez**, para descargar los documentos.
 - Dependencias en [`requirements.txt`](requirements.txt): `langchain`, `langchain-google-genai` (≥4.0),
@@ -113,8 +113,8 @@ interfaz de chat con **rastro de fuentes**: cada respuesta muestra el documento 
 que sale, los fragmentos recuperados se pueden desplegar para verificarlos, y la **consulta
 reformulada** se muestra cuando difiere de la pregunta original — la memoria del agente, visible.
 
-**Desplegar en Streamlit Community Cloud**: conectar el repo en [share.streamlit.io](https://share.streamlit.io)
-con `app.py` como archivo principal, y añadir `GOOGLE_API_KEY` en los **secrets** (nunca en el código).
+**Desplegar en Streamlit Community Cloud**: conectar el repo en [share.streamlit.io](https://proyecto-rag-nihalhk.streamlit.app/)
+con `app.py` como archivo principal, y añadir `GOOGLE_API_KEY` en los **secrets** .
 
 Dos detalles **imprescindibles** para que el despliegue no se caiga:
 
