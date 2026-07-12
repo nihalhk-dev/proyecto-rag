@@ -1,0 +1,25 @@
+# Dependencias del proyecto
+# LLM y embeddings de Gemini. La versión >=4.0 usa el SDK unificado google-genai.
+langchain-google-genai>=4.0.0
+# Núcleo de orquestación de LangChain
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+# Base de datos vectorial y su integración con LangChain
+langchain-chroma>=0.1.4
+chromadb>=0.5.0
+# Framework del agente y su memoria (checkpointer)
+langgraph>=0.2.40
+# Lectura de PDFs, carga de variables de entorno y descarga de los documentos reales
+pypdf>=4.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+# Para ejecutar el notebook
+jupyter>=1.0.0
+ipykernel>=6.0.0
+# --- Bonus: interfaz web (app.py) ---
+streamlit>=1.36.0
+# ChromaDB requiere sqlite3 >= 3.35 y la imagen de Streamlit Cloud trae una versión
+# antigua. pysqlite3-binary lo sustituye (ver el parche al inicio de app.py).
+# Solo se instala en Linux; en Windows no es necesario ni funciona.
+pysqlite3-binary; sys_platform == "linux"

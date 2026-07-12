@@ -1,0 +1,26 @@
+# Clave de API (¡NUNCA subir!)
+.env
+
+# Documentos: se descargan al ejecutar el notebook, no se redistribuyen
+documents/*.pdf
+documents/*.txt
+documents/*.csv
+!documents/.gitkeep
+
+# NOTA: chroma_db/ SÍ se versiona a propósito.
+# El sistema de archivos de Streamlit Cloud es efímero: sin el índice en el repo,
+# la app reindexaría ~300 fragmentos en cada arranque en frío y agotaría la cuota.
+
+# Memoria persistente (si usas SqliteSaver)
+memoria.sqlite
+*.sqlite3-journal
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Caché de Python y Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
